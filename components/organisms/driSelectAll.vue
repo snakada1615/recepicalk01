@@ -10,7 +10,6 @@
       ></b-form-checkbox>
       <span>single</span>
     </b-form>
-    <p>sw:{{targetSwitch}}</p>
     <div v-if="targetSwitch">
       <dri-select-single
         :items="driItems"

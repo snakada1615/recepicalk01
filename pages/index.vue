@@ -1,14 +1,18 @@
 <template>
-  <b-container>
-    <p>hello me</p>
-    <dri-select-all
-      :targetSwitch.sync="singleTarget"
-      :max="max"
-      :driPopulations="nutritionTarget"
-      :driItems="DRI"
-      @changeTarget="nutritionTarget = JSON.parse(JSON.stringify($event))"
-      @changeNutrition="nutrition = $event"
-    ></dri-select-all>
+  <b-container >
+    <b-row>
+      <b-col lg="5">
+        <dri-select-all
+          :targetSwitch.sync="singleTarget"
+          :max="max"
+          :driPopulations="nutritionTarget"
+          :driItems="DRI"
+          @changeTarget="nutritionTarget = JSON.parse(JSON.stringify($event))"
+          @changeNutrition="nutrition = $event"
+          style="max-width: 540px"
+        ></dri-select-all>
+      </b-col>
+    </b-row>
   </b-container>
 </template>
 
