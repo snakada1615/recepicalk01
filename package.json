@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "preinstall": "npx npm-force-resolutions || echo 'ignore'"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
@@ -20,5 +21,11 @@
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "resolutions": {
+    "unset-value": "^2.0.1",
+    "nth-check": "^2.0.1",
+    "glob-parent": "^5.0.1",
+    "css-what": "^5.0.1"
+  }
 }
